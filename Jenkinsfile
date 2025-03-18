@@ -11,7 +11,7 @@ node {
 
     stage('Run Container') {
         script {
-            sh "docker run -d -p 3000:5000 --name backend-app sundar/backend-app:latest"
+            sh "docker run -d -p 5000:5000 --name backend-app sundar/backend-app:latest"
         }
     }
 }
